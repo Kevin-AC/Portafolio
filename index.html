@@ -9,26 +9,25 @@
 <body class=" flex justify-center text-fondoC font-Montserrat bg-blanco">
     <nav class="w-screen px-60  z-40 h-14 fixed top-0 flex justify-end items-center bg-fuenteP bg-Borgoña font-bold text-blanco">
         <div class="flex gap-6">
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a class="" href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
-    <main class="max-w-4xl">
-        <section class="flex  ">
-            <div class="mt-64  w-full">
-                <h1 class="text-5xl  uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
-                <p class="text-sm pr-44 ">Hola estoy interesado en el desarrollo web, 
+    <main class="max-w-4xl ">
+        <h1 id="home" class=" mt-52 text-5xl  uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
+        <section class="flex pl-6">
+            <div class="mt-10">
+                <p class="text-sm  ">Hola estoy interesado en el desarrollo web, 
                         busco poner aprueba y aplicar todo lo que he aprendido,
-                         He maquetado páginas estáticas con HTML CSS JS haciendo retos</p>
+                        He maquetado páginas estáticas con HTML CSS JS haciendo retos</p>
                 <button class="my-7 w-40 h-12 bg-Borgoña rounded-lg text-blanco" >Download Cv</button>
-                
             </div>
-            
+            <img class="" src="./img/code_thinking.svg" alt="code-thinking" width="500px">
         </section>
 
-        <section class="my-28">
+        <section id="skills" class="my-28 pt-10">
                 <h2 class="text-4xl font-normal mb-6 ">Skills</h2>
                 <div class="flex justify-between">
                     <div class="w-full grid grid-cols-3 gap-5">
@@ -55,18 +54,18 @@
                 </div>
         </section>
         
-         <section id="projects" class="my-28  "> <!--container -->
-            <h2 class="text-4xl font-normal mb-6">Proyectos</h2>
-            <div class=" relative max-h-3xl flex justify-center "><!--slider-wrapper -->
+         <section id="projects" class="my-28 h-screen "> <!--container -->
+            <h2 class="text-4xl font-normal">Proyectos</h2>
+            <div class=" relative mt-10 flex justify-center "><!--slider-wrapper -->
                 <!--slider-->
-                <div class=" flex overflow-hidden snap-x  scroll-smooth rounded-xl ">
+                <div class="max-w-2xl flex overflow-hidden snap-x  scroll-smooth rounded-xl ">
                     <img class="img" id="img1" src="./img/card.jpg" alt="interactive-card">
                     <img class="img" id="img2" src="./img/tip-calculator.jpg" alt="tip-calculator">
                     <img class="img" id="img3" src="./img/intro-sing-up.jpg" alt="sign-up">
                     <img class="img" id="img4" src="./img/nft-card.jpg" alt="nft-card">
                     <img class="img" id="img5" src="./img/qr-component.jpg" alt="qr-component">
                 </div>
-                <div class="flex 1 gap-x-4 absolute bottom-12">
+                <div class="flex gap-x-4 absolute bottom-8">
                     <a class="navA" href="#img1"></a>
                     <a class="navA" href="#img2"></a>
                     <a class="navA" href="#img3"></a>
@@ -78,7 +77,7 @@
             </div>
 
         </section>
-        <section>
+        <section id="contact">
             <h2 class="text-4xl font-normal mb-6  ">Contacto</h2>
             <p class="text-sm pr-44 text-fuenteC">Me llamo Kevin Argumedo estoy interesado en el desarrollo web, 
                 busco poner aprueba y aplicar todo lo que he aprendido,

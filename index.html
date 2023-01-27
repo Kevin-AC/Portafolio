@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="./dist/output.css">
     <title>Kevin Argumedo</title>
 </head>
-<body class=" flex justify-center text-fondoC font-Montserrat bg-blanco">
-    <nav class="w-screen px-60  z-40 h-14 fixed top-0 flex justify-end items-center bg-fuenteP bg-Borgoña font-bold text-blanco">
+<body class=" flex justify-center text-fondoC font-Montserrat bg-secundario">
+    <nav class="w-screen px-60  z-40 h-14 fixed top-0 flex justify-end items-center bg-fuenteP bg-principal font-bold text-secundario">
         <div class="flex gap-6">
-            <a class="" href="#home">Home</a>
+            <a href="#home">Home</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -19,26 +19,31 @@
         <h1 id="home" class=" mt-52 text-5xl  uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
         <section class="flex pl-6">
             <div class="mt-10">
-                <p class="text-sm  ">Hola estoy interesado en el desarrollo web, 
-                        busco poner aprueba y aplicar todo lo que he aprendido,
-                        He maquetado páginas estáticas con HTML CSS JS haciendo retos</p>
-                <button class="my-7 w-40 h-12 bg-Borgoña rounded-lg text-blanco" >Download Cv</button>
+                <p class="text-sm">Hola Soy Kevin, junior en desarrollo web. 
+                                    Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
+                                    maquetando paginas con HTML CSS JS y Tailwind</p>
+                <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing"> <button class="my-7 w-40 h-12 bg-principal rounded-lg text-secundario"  >Download Cv</button></a>
+                <div class="flex gap-6">
+                    <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" width="45ppx" alt=""></a>
+                    <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" width="45ppx" alt=""></a>
+                </div>
+               
             </div>
             <img class="" src="./img/code_thinking.svg" alt="code-thinking" width="500px">
         </section>
 
         <section id="skills" class="my-28 pt-10">
-                <h2 class="text-4xl font-normal mb-6 ">Skills</h2>
-                <div class="flex justify-between">
+                <h2  class="text-4xl font-normal  ">Skills</h2>
+                <div class="flex justify-between  py-20">
                     <div class="w-full grid grid-cols-3 gap-5">
-                        <div class="w-36 h-36  grid place-content-center ">
+                        <div class="w-36 h-36  grid place-content-center bg-prueba ">
                             <img src="./img/github.svg" alt="" width="80px">
                         </div>
-                        <div class="w-36 h-36  grid place-content-center ">
+                        <div class="w-36 h-36  grid place-content-center bg-ganisboro ">
                             <img src="./img/git.svg" alt="" width="80px">
                         </div>
                         <div class="w-36 h-36  grid place-content-center ">
-                            <img src="./img/html5-.svg" alt="" width="80px">
+                            <img src="./img/html5.svg" alt="" width="80px">
                         </div>
                         <div class="w-36 h-36  grid place-content-center ">
                             <img src="./img/css.svg" alt="" width="80px">
@@ -47,41 +52,68 @@
                             <img src="./img/javascript.svg" alt="" width="80px">
                         </div>
                         <div class="w-36 h-36  grid place-content-center ">
-                            <img src="./img/tailwind.svg" alt="" width="80px">
+                            <img src="./img/tailwindcss.svg" alt="" width="80px">
                         </div>
                     </div>
                    
                 </div>
         </section>
         
-         <section id="projects" class="my-28 h-screen "> <!--container -->
+         <section id="projects" class="my-28   "> <!--container -->
             <h2 class="text-4xl font-normal">Proyectos</h2>
-            <div class=" relative mt-10 flex justify-center "><!--slider-wrapper -->
-                <!--slider-->
-                <div class="max-w-2xl flex overflow-hidden snap-x  scroll-smooth rounded-xl ">
-                    <img class="img" id="img1" src="./img/card.jpg" alt="interactive-card">
-                    <img class="img" id="img2" src="./img/tip-calculator.jpg" alt="tip-calculator">
-                    <img class="img" id="img3" src="./img/intro-sing-up.jpg" alt="sign-up">
-                    <img class="img" id="img4" src="./img/nft-card.jpg" alt="nft-card">
-                    <img class="img" id="img5" src="./img/qr-component.jpg" alt="qr-component">
+                <div class="grid grid-cols-2 gap-6 p-10">
+                    <div id="image1" class="relative" >
+                        <img  class="img" src="./img/card.jpg" alt="">
+                        <div id="boton1" class="botones ">
+                            <button  class="boton">Ver sitio</button>
+                            <button class="boton">Repositorio</button>
+                        </div>
+                    </div>
+
+                    <div id="image1" class="relative">
+                        <img class="img" src="./img/tip-calculator.jpg" alt="">
+                        <div id="boton1"  class="botones">
+                            <button  class="boton">Ver sitio</button>
+                            <button class="boton">Repositorio</button>
+                        </div>
+                    </div>
+                    <div >
+                        <img class="img" src="./img/intro-sing-up.jpg" alt="">
+                        <div id="boton1"  class="botones">
+                            <button  class="boton">Ver sitio</button>
+                            <button class="boton">Repositorio</button>
+                        </div>
+                    </div>
+                    <div >
+                        <img class="img" src="./img/nft-card.jpg" alt="">
+                        <div id="boton1"  class="botones">
+                            <button  class="boton">Ver sitio</button>
+                            <button class="boton">Repositorio</button>
+                        </div>
+                    </div>
+                    <div >
+                        <img class="img" src="./img/qr-component.jpg" alt="">
+                        <div id="boton1"  class="botones">
+                            <button  class="boton">Ver sitio</button>
+                            <button class="boton">Repositorio</button>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="flex gap-x-4 absolute bottom-8">
-                    <a class="navA" href="#img1"></a>
-                    <a class="navA" href="#img2"></a>
-                    <a class="navA" href="#img3"></a>
-                    <a class="navA" href="#img4"></a>
-                    <a class="navA" href="#img5"></a>
-                </div>
-                <!--slider-nav-->
                 
-            </div>
+                
+            
 
         </section>
-        <section id="contact">
-            <h2 class="text-4xl font-normal mb-6  ">Contacto</h2>
-            <p class="text-sm pr-44 text-fuenteC">Me llamo Kevin Argumedo estoy interesado en el desarrollo web, 
-                busco poner aprueba y aplicar todo lo que he aprendido,
-                 He maquetado páginas estáticas con HTML CSS JS haciendo retos</p>
+        <section id="contact" class="">
+            <h2 class="text-4xl font-normal my-6 ">Contacto</h2>
+            <div class="flex justify-center gap-24 py-24">
+                <img src="./img/mail.svg" alt="correo" width="50px">
+                <img src="./img/github.svg" alt="github" width="50px">
+                <img src="./img/linkedin.svg" alt="linkedin" width="50px">
+                <img src="./img/twitter.svg" alt="twitter" width="50px">
+            </div>
+            
 
         </section>
 

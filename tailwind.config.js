@@ -4,17 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'blanco':'#F4F9F8',
+        'secundario':'#F7F7FF',
         'azulOscuro':'#24253c',
         'gris':'#2F3233',
         'grisClaro':'#7B817F',
-        'Borgoña':'#581845 ',
+        'principal':'#070600',
         'black':'#040410',
-        'lila':'#e96e76',
-       
+        'prueba':'#EAF6FF',
+        // 'xanadu':'#FFFCF9',
+        // 'platinum':'#E7E5DF',
+        // 'xiketic':'#0F1020'
       },
       fontFamily:{
-        'Roboto':'Roboto',
+        'Roboto':'Roboto', 
         'Montserrat':'Montserrat',
       },
       backgroundImage:{
@@ -33,9 +35,7 @@ module.exports = {
         '375':'375px',
         '845':'845'
       },
-      margin:{
-        '500':'500px'
-      }
+   
       
     },
   },

@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @tailwind base;
-.img{
-    @apply flex grow shrink-0 basis-11/12  object-cover
-}
-.navA{
-    @apply  w-4 h-4 rounded-full bg-Borgoña opacity-70  ease-liner duration-300 z-40 hover:opacity-100
-}
+    .img{
+        @apply rounded-xl cursor-pointer hover:opacity-75
+    }
+  
+    .boton{
+        @apply bg-principal px-5 rounded-2xl h-6 w-auto text-secundario
+    }
+ 
+    .botones{
+        @apply absolute bottom-1 left-20 hidden gap-6
+        
+    }
 @tailwind components;
 @tailwind utilities;

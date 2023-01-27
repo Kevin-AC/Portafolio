@@ -10,7 +10,7 @@ module.exports = {
         'grisClaro':'#7B817F',
         'principal':'#070600',
         'black':'#040410',
-        'prueba':'#EAF6FF',
+        'Alabaster':'#E8EBE4',
         // 'xanadu':'#FFFCF9',
         // 'platinum':'#E7E5DF',
         // 'xiketic':'#0F1020'
@@ -32,8 +32,7 @@ module.exports = {
         'Mail':"./img/mail.svg",
       },
       width:{
-        '375':'375px',
-        '845':'845'
+        '480':'480px',
       },
    
       

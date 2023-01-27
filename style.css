@@ -6,12 +6,15 @@
     }
   
     .boton{
-        @apply bg-principal px-5 rounded-2xl h-6 w-auto text-secundario
+        @apply bg-principal font-medium px-5 rounded-2xl h-6 w-auto text-secundario
     }
  
     .botones{
         @apply absolute bottom-1 left-20 hidden gap-6
         
+    }
+    .input{
+        @apply w-96 h-12 px-10 rounded-lg outline-none border border-grisClaro  bg-Alabaster
     }
 @tailwind components;
 @tailwind utilities;

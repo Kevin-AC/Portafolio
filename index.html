@@ -15,44 +15,52 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
-    <main class="max-w-4xl ">
-        <h1 id="home" class=" mt-52 text-5xl  uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
-        <section class="flex pl-6">
+    <main class="xl:max-w-4xl w-480 ">
+        <h1 id="home" class="px-5 text-center text-3xl mt-52 xl:text-5xl  uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
+        <img class=" " src="./img/code_thinking.svg" alt="code-thinking" width="500px">
+        <section class="grid px-6  xl:flex xl:pl-6">
             <div class="mt-10">
-                <p class="text-sm">Hola Soy Kevin, junior en desarrollo web. 
-                                    Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
-                                    maquetando paginas con HTML CSS JS y Tailwind</p>
-                <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing"> <button class="my-7 w-40 h-12 bg-principal rounded-lg text-secundario"  >Download Cv</button></a>
-                <div class="flex gap-6">
+                <p class="text-base">
+                    Hola Soy Kevin, junior en desarrollo web. 
+                    Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
+                    maquetando paginas con HTML CSS JS y Tailwind</p>
+                <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing"> <button class="font-bold my-7 w-40 h-12 bg-principal rounded-lg text-secundario hover:animate-pulse "  >Download Cv</button></a>
+                <div class="flex gap-7">
                     <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" width="45ppx" alt=""></a>
                     <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" width="45ppx" alt=""></a>
                 </div>
                
             </div>
-            <img class="" src="./img/code_thinking.svg" alt="code-thinking" width="500px">
+           
         </section>
 
         <section id="skills" class="my-28 pt-10">
                 <h2  class="text-4xl font-normal  ">Skills</h2>
-                <div class="flex justify-between  py-20">
-                    <div class="w-full grid grid-cols-3 gap-5">
-                        <div class="w-36 h-36  grid place-content-center bg-prueba ">
-                            <img src="./img/github.svg" alt="" width="80px">
+                <div class="grid place-content-center py-20">
+                    <div class="w-full grid grid-cols-3 gap-28">
+                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
+                            <img class="mb-3" src="./img/github.svg" alt="" width="80px">
+                            <p class="text-center font-medium ">GitHub</p>
                         </div>
-                        <div class="w-36 h-36  grid place-content-center bg-ganisboro ">
-                            <img src="./img/git.svg" alt="" width="80px">
+                        <div class="w-36 h-36  grid place-content-center bg-Alabaster  rounded-xl">
+                            <img class="mb-3" src="./img/git.svg" alt="" width="80px">
+                            <p class="text-center font-medium ">Git</p>
                         </div>
-                        <div class="w-36 h-36  grid place-content-center ">
-                            <img src="./img/html5.svg" alt="" width="80px">
+                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
+                            <img class="mb-3" src="./img/html5.svg" alt="" width="80px">
+                            <p class="text-center font-medium ">HTML</p>
                         </div>
-                        <div class="w-36 h-36  grid place-content-center ">
-                            <img src="./img/css.svg" alt="" width="80px">
+                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
+                            <img class="mb-3" src="./img/css.svg" alt="" width="80px">
+                            <p class="text-center font-medium ">CSS</p>
                         </div>
-                        <div class="w-36 h-36  grid place-content-center ">
-                            <img src="./img/javascript.svg" alt="" width="80px">
+                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
+                            <img class="mb-3" src="./img/javascript.svg" alt="" width="80px">
+                            <p class="text-center font-medium ">JavaScript</p>
                         </div>
-                        <div class="w-36 h-36  grid place-content-center ">
-                            <img src="./img/tailwindcss.svg" alt="" width="80px">
+                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl ">
+                            <img class="mb-3" src="./img/tailwindcss.svg" alt="" width="80px">
+                            <p class="text-center font-medium ">Tailwind</p>
                         </div>
                     </div>
                    
@@ -101,20 +109,19 @@
                     
                 </div>
                 
-                
-            
-
         </section>
-        <section id="contact" class="">
-            <h2 class="text-4xl font-normal my-6 ">Contacto</h2>
-            <div class="flex justify-center gap-24 py-24">
-                <img src="./img/mail.svg" alt="correo" width="50px">
-                <img src="./img/github.svg" alt="github" width="50px">
-                <img src="./img/linkedin.svg" alt="linkedin" width="50px">
-                <img src="./img/twitter.svg" alt="twitter" width="50px">
-            </div>
-            
-
+        <section id="contact">
+            <h2 class="text-4xl font-normal my-6">Contacto</h2>
+                <div class=" grid place-content-center gap-3">
+                    <input class="input" placeholder="Email" type="text">
+                    <textarea class="input h-32 py-3 " name="text" id="" cols="10" rows="10"   placeholder="Mensaje"></textarea>
+                    <button class="w-96 my-3 font-bold h-12 bg-principal rounded-lg text-secundario hover:animate-pulse">Enviar</button>
+                </div>
+                <div class="flex justify-center gap-10 py-6">
+                    <a href="https://github.com/Kevin-AC"><img src="./img/github.svg" alt="github" width="50px"></a>
+                    <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" alt="linkedin"width="50px"></a>
+                    <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" alt="twitter" width="50px"></a>
+                </div>
         </section>
 
 

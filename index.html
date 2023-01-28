@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="./dist/output.css">
     <title>Kevin Argumedo</title>
 </head>
-<body class=" flex justify-center font-Montserrat bg-secundario">
-    <header>
-        <nav class="w-375 lg:w-screen xl:px-60 z-40 h-14 fixed top-0 flex justify-center xl:justify-end items-center bg-fuenteP bg-principal font-bold text-secundario">
+<body class="flex justify-center font-Montserrat bg-secundario">
+      <nav class="w-screen xl:px-60 z-40 h-14 fixed top-0 flex justify-center xl:justify-end items-center bg-fuenteP bg-principal font-bold text-secundario">
             <div class="flex gap-6">
                 <a href="#home">Home</a>
                 <a href="#skills">Skills</a>
@@ -16,31 +15,29 @@
                 <a href="#contact">Contact</a>
             </div>
         </nav>
-    </header>
-    
-    <main class="w-375 xl:w-screen border ">
-        <h1 id="home" class="px-5 text-center text-3xl mt-28 xl:mt-52 xl:text-5xl  uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
-        <img class="px-4" src="./img/code_thinking.svg" alt="code-thinking" width="500px">
-        <section class="block px-5 xl:flex xl:pl-6">
-            <div class="mt-10">
-                <p class="text-base text-center xl:text-left">
-                    Hola Soy Kevin, junior en desarrollo web. 
-                    Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
-                    maquetando paginas con HTML CSS JS y Tailwind</p>
-                <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing"> <button class="font-bold my-7 w-full xl:w-40 h-12 bg-principal rounded-lg text-secundario hover:animate-pulse "  >Download Cv</button></a>
-                <div class=" flex justify-center xl:justify-start  gap-7">
-                    <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" width="45ppx" alt=""></a>
-                    <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" width="45ppx" alt=""></a>
+    <main class="w-screen  max-w-4xl ">
+        <section class="relative ">
+            <h1 id="home" class="px-5 text-center text-3xl  mt-28 xl:text-5xl xl:px-0 xl:text-left uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
+            <img class="mx-auto px-4 xl:px-0 xl:absolute xl:right-0 xl:top-16 " src="./img/programming.svg" alt="code-thinking" width="400px">
+                <div class=" px-5 xl:flex xl:pl-6 xl:px-0 xl:pr-96  ">
+                    <div class="xl:mt-5 mt-8 md:px-32 xl:px-4">
+                        <p class=" text-base text-center  xl:text-left z-s0">
+                            Hola Soy Kevin, junior en desarrollo web. 
+                            Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
+                            maquetando paginas con HTML CSS JS y Tailwind</p>
+                        <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing"> <button class="font-bold my-7 w-full xl:w-40 h-12 bg-principal rounded-xl text-secundario hover:animate-pulse "  >Download Cv</button></a>
+                        <div class=" flex justify-center xl:justify-start  gap-7">
+                            <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" width="45ppx" alt=""></a>
+                            <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" width="45ppx" alt=""></a>
+                        </div>
+                    </div>
                 </div>
-               
-            </div>
-           
         </section>
-
+    
         <section id="skills" class="my-16 xl:my-28 ">
                 <h2  class="text-center text-4xl font-normal xl:text-left  ">Skills</h2>
                 <div class="grid place-content-center py-10 xl:py-20">
-                    <div class="w-full grid grid-cols-2 gap-4 xl:grid-cols-3 xl:gap-28">
+                    <div class="w-full grid grid-cols-2 gap-4 md:grid-cols-3 xl:gap-20">
                         <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
                             <img class="mb-3" src="./img/github.svg" alt="" width="80px">
                             <p class="text-center font-medium ">GitHub</p>
@@ -70,9 +67,9 @@
                 </div>
         </section>
         
-         <section id="projects" class="my-16 xl:my-28"> <!--container -->
+         <section id="projects" class="my-16 xl:my-20"> <!--container -->
             <h2 class="text-center xl:text-left text-4xl font-normal">Proyectos</h2>
-                <div class="grid gap-4 p-4 xl:grid-cols-2 xl:gap-6 xl:p-10">
+                <div class="grid gap-4 p-4 xl:grid-cols-2 xl:gap-6 md:p-16 xl:p-10">
                     <div id="image1" class="relative" >
                         <img  class="img" src="./img/card.jpg" alt="">
                         <div id="boton1" class="botones ">
@@ -117,7 +114,7 @@
                 <div class="grid place-content-center gap-3 ">
                     <input class="input" placeholder="Email" type="text">
                     <textarea class="input h-32 py-3 " name="text" id="" cols="10" rows="10"   placeholder="Mensaje"></textarea>
-                    <button class="w-full xl:w-96 my-3 font-bold h-12 bg-principal rounded-lg text-secundario hover:animate-pulse">Enviar</button>
+                    <button class=" md:w-96 my-3 font-bold h-12 bg-principal rounded-xl text-secundario hover:animate-pulse">Enviar</button>
                 </div>
                 <div class="flex justify-center gap-10 py-6">
                     <a href="https://github.com/Kevin-AC"><img src="./img/github.svg" alt="github" width="50px"></a>

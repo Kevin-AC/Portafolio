@@ -32,7 +32,8 @@ module.exports = {
         'Mail':"./img/mail.svg",
       },
       width:{
-        '480':'480px',
+        '375':'375px',
+        '896':'896px'
       },
    
       

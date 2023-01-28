@@ -14,7 +14,7 @@
         
     }
     .input{
-        @apply w-96 h-12 px-10 rounded-lg outline-none border border-grisClaro  bg-Alabaster
+        @apply w-full xl:w-96 h-12 px-10 rounded-lg outline-none border border-grisClaro  bg-Alabaster
     }
 @tailwind components;
 @tailwind utilities;

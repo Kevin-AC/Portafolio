@@ -549,7 +549,7 @@ video {
 
 .input{
   height: 3rem;
-  width: 24rem;
+  width: 100%;
   border-radius: 0.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -560,6 +560,12 @@ video {
   padding-right: 2.5rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 1280px){
+  .input{
+    width: 24rem;
+  }
 }
 
 .container{
@@ -617,9 +623,9 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.my-28{
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .my-6{
@@ -632,8 +638,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mt-52{
-  margin-top: 13rem;
+.mt-28{
+  margin-top: 7rem;
 }
 
 .mb-5{
@@ -646,6 +652,10 @@ video {
 
 .mb-3{
   margin-bottom: 0.75rem;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -672,12 +682,8 @@ video {
   height: 8rem;
 }
 
-.w-screen{
-  width: 100vw;
-}
-
-.w-40{
-  width: 10rem;
+.w-375{
+  width: 375px;
 }
 
 .w-full{
@@ -686,22 +692,6 @@ video {
 
 .w-36{
   width: 9rem;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-480{
-  width: 480px;
-}
-
-.max-w-4xl{
-  max-width: 56rem;
-}
-
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-2{
@@ -716,10 +706,6 @@ video {
   align-items: center;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -732,8 +718,8 @@ video {
   gap: 1.75rem;
 }
 
-.gap-28{
-  gap: 7rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-3{
@@ -752,6 +738,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .bg-secundario{
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 255 / var(--tw-bg-opacity));
@@ -767,18 +757,23 @@ video {
   background-color: rgb(232 235 228 / var(--tw-bg-opacity));
 }
 
-.p-10{
-  padding: 2.5rem;
+.p-4{
+  padding: 1rem;
 }
 
-.px-60{
-  padding-left: 15rem;
-  padding-right: 15rem;
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-3{
@@ -791,24 +786,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.pl-6{
-  padding-left: 1.5rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -817,9 +794,9 @@ video {
   font-family: Montserrat;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base{
@@ -830,11 +807,6 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -872,21 +844,94 @@ video {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@media (min-width: 1024px){
+  .lg\:w-screen{
+    width: 100vw;
+  }
+
+  .lg\:w-896{
+    width: 896px;
+  }
+}
+
 @media (min-width: 1280px){
+  .xl\:my-28{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .xl\:mt-52{
+    margin-top: 13rem;
+  }
+
   .xl\:flex{
     display: flex;
   }
 
-  .xl\:grid{
-    display: grid;
+  .xl\:w-screen{
+    width: 100vw;
+  }
+
+  .xl\:w-40{
+    width: 10rem;
+  }
+
+  .xl\:w-96{
+    width: 24rem;
+  }
+
+  .xl\:w-896{
+    width: 896px;
   }
 
   .xl\:max-w-4xl{
     max-width: 56rem;
   }
 
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .xl\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .xl\:gap-28{
+    gap: 7rem;
+  }
+
+  .xl\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .xl\:p-10{
+    padding: 2.5rem;
+  }
+
+  .xl\:px-60{
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .xl\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .xl\:pl-6{
     padding-left: 1.5rem;
+  }
+
+  .xl\:text-left{
+    text-align: left;
   }
 
   .xl\:text-5xl{

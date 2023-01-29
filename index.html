@@ -6,123 +6,119 @@
     <link rel="stylesheet" href="./dist/output.css">
     <title>Kevin Argumedo</title>
 </head>
-<body class="flex justify-center font-Montserrat bg-secundario">
-      <nav class="w-screen xl:px-60 z-40 h-14 fixed top-0 flex justify-center xl:justify-end items-center bg-fuenteP bg-principal font-bold text-secundario">
-            <div class="flex gap-6">
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
+<body class="flex justify-center font-Montserrat  bg-secundario ">
+    <header class="text-white font-bold fixed top-0 z-10 ">
+        <nav class="w-screen  h-16 px-4 bg-principal items-center flex justify-center xl:justify-end xl:pr-16 gap-4 md:gap-8">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-    <main class="w-screen  max-w-4xl ">
-        <section class="relative ">
-            <h1 id="home" class="px-5 text-center text-3xl  mt-28 xl:text-5xl xl:px-0 xl:text-left uppercase mb-5 ">Kevin Argumedo<BR> <span class="lowercase font-bold ">Front end Developer</span></h1>
-            <img class="mx-auto px-4 xl:px-0 xl:absolute xl:right-0 xl:top-16 " src="./img/programming.svg" alt="code-thinking" width="400px">
-                <div class=" px-5 xl:flex xl:pl-6 xl:px-0 xl:pr-96  ">
-                    <div class="xl:mt-5 mt-8 md:px-32 xl:px-4">
-                        <p class=" text-base text-center  xl:text-left z-s0">
-                            Hola Soy Kevin, junior en desarrollo web. 
-                            Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
-                            maquetando paginas con HTML CSS JS y Tailwind</p>
-                        <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing"> <button class="font-bold my-7 w-full xl:w-40 h-12 bg-principal rounded-xl text-secundario hover:animate-pulse "  >Download Cv</button></a>
-                        <div class=" flex justify-center xl:justify-start  gap-7">
-                            <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" width="45ppx" alt=""></a>
-                            <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" width="45ppx" alt=""></a>
-                        </div>
-                    </div>
+    </header>
+    <main class="p-4 text-center sm:w-screen md:w-3/4 xl:max-w-4xl xl:text-left ">
+        <section id="home" class="relative xl:my-48 ">
+          <div class="mt-28 ">
+            <h1 class=" mb-4 text-3xl xl:text-4xl font-medium uppercase ">Kevin Argumedo <br> <span class="text-3xl font-bold">Front-end Developer</span></h1>
+            <img class="mx-auto my-4 xl:absolute xl:right-0 xl:top-0" src="./img/programming.svg" width="500" alt="programming">
+            <div class="xl:pl-4">
+                <p class="py-4 xl:w-96">
+                    Hola Soy Kevin, junior en desarrollo web. 
+                    Estoy poniendo a prueba lo que he estado aprendiendo en diferentes retos, 
+                    maquetando paginas con HTML,CSS,JS y Tailwind</p>
+                    <a href="https://drive.google.com/file/d/12DcxPjh-LZ8P6bdEYe2wtmTp1ROXpskb/view?usp=sharing">
+                        <button class="buttons xl:w-64  xl:mt-4" >Download Cv</button>   
+                    </a>
+                
+                <div class="my-6 xl:mt-10 flex justify-center xl:justify-start gap-4">
+                    <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/">
+                        <img src="./img/linkedin.svg" width="45px" alt="linkedind">
+                    </a>
+                    <a href="https://twitter.com/kevin_argumedo">
+                        <img src="./img/twitter.svg" width="45px" alt="twitter">
+                    </a>
+                    
                 </div>
-        </section>
-    
-        <section id="skills" class="my-16 xl:my-28 ">
-                <h2  class="text-center text-4xl font-normal xl:text-left  ">Skills</h2>
-                <div class="grid place-content-center py-10 xl:py-20">
-                    <div class="w-full grid grid-cols-2 gap-4 md:grid-cols-3 xl:gap-20">
-                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
-                            <img class="mb-3" src="./img/github.svg" alt="" width="80px">
-                            <p class="text-center font-medium ">GitHub</p>
-                        </div>
-                        <div class="w-36 h-36  grid place-content-center bg-Alabaster  rounded-xl">
-                            <img class="mb-3" src="./img/git.svg" alt="" width="80px">
-                            <p class="text-center font-medium ">Git</p>
-                        </div>
-                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
-                            <img class="mb-3" src="./img/html5.svg" alt="" width="80px">
-                            <p class="text-center font-medium ">HTML</p>
-                        </div>
-                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
-                            <img class="mb-3" src="./img/css.svg" alt="" width="80px">
-                            <p class="text-center font-medium ">CSS</p>
-                        </div>
-                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl">
-                            <img class="mb-3" src="./img/javascript.svg" alt="" width="80px">
-                            <p class="text-center font-medium ">JavaScript</p>
-                        </div>
-                        <div class="w-36 h-36  grid place-content-center bg-Alabaster rounded-xl ">
-                            <img class="mb-3" src="./img/tailwindcss.svg" alt="" width="80px">
-                            <p class="text-center font-medium ">Tailwind</p>
-                        </div>
-                    </div>
-                   
-                </div>
-        </section>
-        
-         <section id="projects" class="my-16 xl:my-20"> <!--container -->
-            <h2 class="text-center xl:text-left text-4xl font-normal">Proyectos</h2>
-                <div class="grid gap-4 p-4 xl:grid-cols-2 xl:gap-6 md:p-16 xl:p-10">
-                    <div id="image1" class="relative" >
-                        <img  class="img" src="./img/card.jpg" alt="">
-                        <div id="boton1" class="botones ">
-                            <button class="boton">Ver sitio</button>
-                            <button class="boton">Repositorio</button>
-                        </div>
-                    </div>
-
-                    <div id="image1" class="relative">
-                        <img class="img" src="./img/tip-calculator.jpg" alt="">
-                        <div id="boton1"  class="botones">
-                            <button  class="boton">Ver sitio</button>
-                            <button class="boton">Repositorio</button>
-                        </div>
-                    </div>
-                    <div >
-                        <img class="img" src="./img/intro-sing-up.jpg" alt="">
-                        <div id="boton1"  class="botones">
-                            <button  class="boton">Ver sitio</button>
-                            <button class="boton">Repositorio</button>
-                        </div>
-                    </div>
-                    <div >
-                        <img class="img" src="./img/nft-card.jpg" alt="">
-                        <div id="boton1"  class="botones">
-                            <button  class="boton">Ver sitio</button>
-                            <button class="boton">Repositorio</button>
-                        </div>
-                    </div>
-                    <div >
-                        <img class="img" src="./img/qr-component.jpg" alt="">
-                        <div id="boton1"  class="botones">
-                            <button  class="boton">Ver sitio</button>
-                            <button class="boton">Repositorio</button>
-                        </div>
-                    </div>          
-                </div>
+            </div>
+          </div>
         </section>
 
-        <section class="">
-            <h2 class="text-center xl:text-left text-4xl font-normal my-6">Contacto</h2>
-                <div class="grid place-content-center gap-3 ">
-                    <input class="input" placeholder="Email" type="text">
-                    <textarea class="input h-32 py-3 " name="text" id="" cols="10" rows="10"   placeholder="Mensaje"></textarea>
-                    <button class=" md:w-96 my-3 font-bold h-12 bg-principal rounded-xl text-secundario hover:animate-pulse">Enviar</button>
+        <section id="skills" class="xl:my-32">
+            <h2 class="text-3xl font-medium my-4" >Skills</h2>
+            <div class="grid place-content-center p-4 mt-5 xl:my-10">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-16">
+                    <div class="imagenSkills">
+                        <img src="./img/github.svg" width="80" alt="github">
+                        <p class="textSkills">GitHub</p>
+                    </div>
+                    <div class="imagenSkills">
+                        <img src="./img/git.svg" width="80" alt="git">
+                        <p class="textSkills">Git</p>
+                    </div>
+                    <div class="imagenSkills">
+                        <img src="./img/html5.svg" width="80" alt="html">
+                        <p class="textSkills">HTML</p>
+                    </div>
+                    <div class="imagenSkills">
+                        <img src="./img/css.svg" width="80" alt="CSS">
+                        <p class="textSkills">CSS</p>
+                    </div>
+                    <div class="imagenSkills">
+                        <img src="./img/javascript.svg" width="80" alt="JS">
+                        <p class="textSkills">JavaScript</p>
+                    </div>
+                    <div class="imagenSkills">
+                        <img src="./img/tailwindcss.svg" width="80" alt="tailwind">
+                        <p class="textSkills">Tailwind</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="text-3xl font-medium my-4">Proyectos</h2>
+            <div class="grid place-content-center p-4 mt-5">
+                <div class="grid gap-4 xl:grid-cols-2 xl:gap-6">
+                    <div class="imgProject">
+                        <img src="./img/card.jpg" alt="creditCard">
+                    </div>
+                    <div class="imgProject">
+                        <img src="./img/tip-calculator.jpg" alt="tip-calculator">
+                    </div>
+                    <div class="imgProject">
+                        <img src="./img/intro-sing-up.jpg" alt="sing-up">
+                    </div>
+                    <div class="imgProject">
+                        <img src="./img/nft-card.jpg" alt="nft-card">
+                    </div>
+                    <div class="imgProject">
+                        <img src="./img/qr-component.jpg" alt="qr-component">
+                    </div>
                 </div>
-                <div class="flex justify-center gap-10 py-6">
-                    <a href="https://github.com/Kevin-AC"><img src="./img/github.svg" alt="github" width="50px"></a>
-                    <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"><img src="./img/linkedin.svg" alt="linkedin"width="50px"></a>
-                    <a href="https://twitter.com/kevin_argumedo"><img src="./img/twitter.svg" alt="twitter" width="50px"></a>
+            </div>
+        </section>
+
+        <section id="contact" class="xl:my-20">
+            <h2 class="text-3xl font-medium  my-4 xl:my-7">Contacto</h2>
+                <div class="xl:mx-28">
+                    <input class="inputs" type="text" placeholder="mensaje">
+                    <textarea class="inputs h-32" name="texto" id="" cols="30" rows="10"></textarea>
+                    <div class="px-9">
+                        <button class="buttons">Enviar</button>
+                    </div>
+                    <div class="flex justify-center gap-4 py-4 xl:gap-9">
+                        <a href="https://github.com/Kevin-AC">
+                            <img src="./img/github.svg" width="45px" alt="github">
+                        </a>
+                        <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/">
+                            <img src="./img/linkedin.svg" width="45px" alt="linkedind">
+                        </a>
+                        <a href="https://twitter.com/kevin_argumedo">
+                            <img src="./img/twitter.svg" width="45px" alt="twitter">
+                        </a>
+                        
+                    </div>
                 </div>
         </section>
     </main>
-    <script src="./main.js"></script>
 </body>
 </html>

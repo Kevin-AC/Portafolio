@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @tailwind base;
-    .img{
-        @apply rounded-xl cursor-pointer hover:opacity-75
-    }
-  
-    .boton{
-        @apply bg-principal font-medium px-5 rounded-2xl h-6 w-auto text-secundario
-    }
- 
-    .botones{
-        @apply absolute bottom-1 left-20 hidden gap-6
-        
-    }
-    .input{
-        @apply md:w-96 h-12 px-10 rounded-lg outline-none border border-grisClaro  bg-Alabaster
-    }
 @tailwind components;
+    .inputs{
+        @apply w-full h-14 rounded-lg pl-4 bg-Alabaster border border-grisClaro mb-4
+    }
+    .buttons{
+        @apply w-full h-12 rounded-lg bg-principal text-white font-bold
+    }
+    .imagenSkills{
+        @apply bg-Alabaster w-36 h-36 rounded-xl grid place-content-center 
+    }
+    .textSkills{
+        @apply font-medium my-2 text-center
+    }
+    .imgProject{
+        @apply rounded-xl overflow-hidden
+    }
 @tailwind utilities;

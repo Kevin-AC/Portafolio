@@ -5,7 +5,6 @@ $form.addEventListener('submit',sendEmail)
 function sendEmail(event){
   event.preventDefault()
   const form=new FormData(this)
-  console.log(form.get('email'))
-  sendmail.setAttribute('href',`mailto:kevin.argumedo@gmail.com?subject=${email}&body=${form.get(mensaje)}`)
+  sendmail.setAttribute('href',`mailto:kevin.argumedo@gmail.com?subject=${form.get(email)}&body=${form.get(mensaje)}`)
   sendmail.click()
 }

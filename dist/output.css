@@ -626,6 +626,22 @@ video {
   width: 100vw;
 }
 
+.scroll-mt-4{
+  scroll-margin-top: 1rem;
+}
+
+.scroll-mt-52{
+  scroll-margin-top: 13rem;
+}
+
+.scroll-mt-24{
+  scroll-margin-top: 6rem;
+}
+
+.scroll-mt-2{
+  scroll-margin-top: 0.5rem;
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -644,6 +660,10 @@ video {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .bg-secundario{
@@ -673,6 +693,10 @@ video {
 .px-9{
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{

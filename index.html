@@ -11,12 +11,12 @@
         <nav class="w-screen  h-16 px-4 bg-principal items-center flex justify-center xl:justify-end xl:pr-16 gap-4 md:gap-8">
             <a href="#home">Home</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
         </nav>
     </header>
     <main class="p-4 text-center sm:w-screen md:w-3/4 xl:max-w-4xl xl:text-left ">
-        <section id="home" class="relative xl:my-48 ">
+        <section id="home" class="relative xl:my-48 scroll-mt-52 ">
           <div class="mt-28 ">
             <h1 class=" mb-4 text-3xl xl:text-4xl font-medium uppercase ">Kevin Argumedo <br> <span class="text-3xl font-bold">Front-end Developer</span></h1>
             <img class="mx-auto my-4 xl:absolute xl:right-0 xl:top-0" src="./img/programming.svg" width="500" alt="programming">
@@ -29,7 +29,7 @@
                         <button class="buttons xl:w-64  xl:mt-4" >Download Cv</button>   
                     </a>
                 
-                <div class="my-6 xl:mt-10 flex justify-center xl:justify-start gap-4">
+                <div class="my-6 xl:mt-10 flex justify-center xl:justify-start gap-6">
                     <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/">
                         <img src="./img/linkedin.svg" width="45px" alt="linkedind">
                     </a>
@@ -42,7 +42,7 @@
           </div>
         </section>
 
-        <section id="skills" class="xl:my-32">
+        <section id="skills" class="xl:my-32 scroll-mt-24">
             <h2 class="text-3xl font-medium my-4" >Skills</h2>
             <div class="grid place-content-center p-4 mt-5 xl:my-10">
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-16">
@@ -74,7 +74,7 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="scroll-mt-24">
             <h2 class="text-3xl font-medium my-4">Proyectos</h2>
             <div class="grid place-content-center p-4 mt-5">
                 <div class="grid gap-4 xl:grid-cols-2 xl:gap-6">
@@ -100,11 +100,14 @@
         <section id="contact" class="xl:my-20">
             <h2 class="text-3xl font-medium  my-4 xl:my-7">Contacto</h2>
                 <div class="xl:mx-28">
-                    <input class="inputs" type="text" placeholder="mensaje">
-                    <textarea class="inputs h-32" name="texto" id="" cols="30" rows="10"></textarea>
-                    <div class="px-9">
-                        <button class="buttons">Enviar</button>
-                    </div>
+                    <form action="">
+                        <input id="email" name="email" class="inputs" type="text" placeholder="Email" >
+                        <textarea id="mensaje" name="mensaje" class="inputs pt-4 h-32" name="texto" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+                        <div class="px-9">
+                            <button class="buttons">Enviar</button>
+                        </div>
+                    </form>
+                    
                     <div class="flex justify-center gap-4 py-4 xl:gap-9">
                         <a href="https://github.com/Kevin-AC">
                             <img src="./img/github.svg" width="45px" alt="github">
@@ -120,5 +123,6 @@
                 </div>
         </section>
     </main>
+    <script src="main.js" ></script>
 </body>
 </html>

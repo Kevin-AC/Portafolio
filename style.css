@@ -3,18 +3,28 @@
 @tailwind base;
 @tailwind components;
     .inputs{
-        @apply w-full h-14 rounded-lg pl-4 bg-Alabaster border border-grisClaro mb-4
+        @apply w-full h-14 rounded-lg pl-4 bg-Alabaster outline-grisClaro mb-4 drop-shadow-lg
     }
     .buttons{
-        @apply w-full h-12 rounded-lg bg-principal text-white font-bold
+        @apply w-full h-12 rounded-lg bg-principal hover:bg-hover text-white font-bold drop-shadow-2xl hover:transition hover:translate-x-1 hover:scale-105 duration-200
     }
     .imagenSkills{
-        @apply bg-Alabaster w-36 h-36 rounded-xl grid place-content-center 
+        @apply bg-Alabaster w-36 h-36 drop-shadow-xl hover:transition hover:-translate-y-1 hover:scale-110 duration-300 rounded-xl grid place-content-center 
     }
     .textSkills{
         @apply font-medium my-2 text-center
     }
     .imgProject{
-        @apply rounded-xl overflow-hidden
+        @apply  rounded-xl overflow-hidden drop-shadow-xl  hover:transition hover:-translate-y-1 hover:scale-110 duration-300 relative flex justify-center items-center
+    }
+    .butonProject{
+        @apply  font-medium my-2 text-center w-auto h-6 px-2 rounded-full bg-Alabaster text-principal font-bold
+    }
+    .divLinks{
+        @apply absolute flex gap-4  invisible group-hover:visible
+    }
+    .navA{
+        @apply  rounded-t-lg hover:border-b-4 w-auto px-4 h-16 hover:bg-hover flex items-center justify-center
+    
     }
 @tailwind utilities;

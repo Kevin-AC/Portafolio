@@ -5,10 +5,11 @@ module.exports = {
     extend: {
       colors:{
         'secundario':'#F7F7FF',
-        'azulOscuro':'#24253c',
         'grisClaro':'#7B817F',
         'principal':'#070600',
+        'semiOscuro':'rgba(0, 0, 0, 0.5)',
         'Alabaster':'#E8EBE4',
+        'hover':'#0F0F0F',
       },
       fontFamily:{
         'Roboto':'Roboto', 
@@ -25,6 +26,7 @@ module.exports = {
         'FrontendM':"./img/frontendmentor.svg",
         'Linkedin':"./img/linkedin.svg",
         'Mail':"./img/mail.svg",
+        
       },
       width:{
         '375':'375px',

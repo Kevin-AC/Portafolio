@@ -539,18 +539,14 @@ video {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   transition-duration: 200ms;
 }
 
 .buttons:hover{
-  --tw-translate-x: 0.25rem;
+  --tw-translate-y: 0.25rem;
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 15 15 / var(--tw-bg-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -568,19 +564,6 @@ video {
   background-color: rgb(232 235 228 / var(--tw-bg-opacity));
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  transition-duration: 300ms;
-}
-
-.imagenSkills:hover{
-  --tw-translate-y: -0.25rem;
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .textSkills{
@@ -659,6 +642,32 @@ video {
   background-color: rgb(15 15 15 / var(--tw-bg-opacity));
 }
 
+.links{
+  display: grid;
+  height: 4rem;
+  width: 4rem;
+  place-content: center;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 235 228 / var(--tw-bg-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-duration: 300ms;
+}
+
+.links:hover{
+  --tw-translate-y: -0.25rem;
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .fixed{
   position: fixed;
 }
@@ -690,12 +699,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-28{
-  margin-top: 7rem;
+.mt-16{
+  margin-top: 4rem;
 }
 
 .mb-4{
   margin-bottom: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .mt-5{
@@ -724,10 +737,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .scroll-mt-52{
@@ -771,10 +780,6 @@ video {
 .bg-Alabaster{
   --tw-bg-opacity: 1;
   background-color: rgb(232 235 228 / var(--tw-bg-opacity));
-}
-
-.bg-semiOscuro{
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .p-4{
@@ -821,28 +826,33 @@ video {
   font-weight: 500;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.drop-shadow-xl{
-  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.shadow-blue-500\/30{
+  --tw-shadow-color: rgb(59 130 246 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.placeholder\:text-principal::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(7 6 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-principal::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(7 6 0 / var(--tw-text-opacity));
 }
 
 .hover\:bg-semiOscuro:hover{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 640px){
-  .sm\:w-screen{
-    width: 100vw;
-  }
+.hover\:bg-hover:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 15 15 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
@@ -866,11 +876,6 @@ video {
 
   .xl\:top-0{
     top: 0px;
-  }
-
-  .xl\:my-48{
-    margin-top: 12rem;
-    margin-bottom: 12rem;
   }
 
   .xl\:my-32{
@@ -898,12 +903,16 @@ video {
     margin-right: 7rem;
   }
 
-  .xl\:mt-4{
-    margin-top: 1rem;
+  .xl\:mt-28{
+    margin-top: 7rem;
   }
 
   .xl\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .xl\:mt-36{
+    margin-top: 9rem;
   }
 
   .xl\:h-64{
@@ -914,8 +923,8 @@ video {
     width: 24rem;
   }
 
-  .xl\:w-64{
-    width: 16rem;
+  .xl\:w-32{
+    width: 8rem;
   }
 
   .xl\:max-w-4xl{
@@ -962,4 +971,4 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-}
+} 

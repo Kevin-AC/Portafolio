@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,176 +7,284 @@
     <link rel="stylesheet" href="./dist/output.css">
     <title>Kevin Argumedo</title>
 </head>
-
-<body class="flex justify-center font-Montserrat  bg-secundario ">
-    <header class="text-white font-bold fixed top-0 z-40 px-10">
-        <nav class="w-screen  h-16  bg-principal flex justify-center xl:justify-end xl:pr-16 ">
-            <a class="navA " href="#home">Inicio</a>
-            <a class="navA " href="#skills">Skills</a>
-            <a class="navA " href="#projects">Proyectos</a>
-            <a class="navA " href="#contact">Contacto</a>
+<body class="bg-background text-white relative font-FiraCode ">
+        <nav class="xl:flex xl:fixed xl:top-0 xl:justify-between w-full bg-background z-50 xl:h-14 xl:px-4 xl:pt-5 xl:border-y">
+            <div>Logo</div>
+            <div class="flex gap-4 list-none">
+                <li><a href="#inicio">Incio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </div>
         </nav>
-    </header>
-    <main class="p-4 text-center w-screen md:w-3/4 xl:max-w-4xl xl:text-left ">
-        <section id="home" class="mt-16 relative  scroll-mt-52 xl:mt-36 ">
-            <h1 class=" mb-4 text-3xl xl:text-4xl font-medium ">Kevin Argumedo <br> <span
-                    class="text-3xl font-bold">Front-end Developer</span></h1>
-            <img class="mx-auto my-4 xl:absolute xl:right-0 xl:top-0" src="./img/programming.svg" width="500"
-                alt="programming">
-            <div class="xl:pl-4 ">
-                <p class="py-4 xl:w-96 mb-6 font-medium">
-                    Hola soy junior en desarrollo web. Me dedico a realizar retos de Frontend Mentor,
-                    esto con HTML, CSS, JS y recientemente con Tailwind poniendo a prueba todo lo que aprendo de manera
-                    autodidacta
-                </p>
-                <a href="#"
-                    target="_blank">
-                    <p class="buttons  xl:w-32 grid place-content-center ">Download Cv</p>
-                </a>
-
-                <div class="my-6 xl:mt-10 flex justify-center xl:justify-start gap-6">
-                    <a class="links shadow-blue-500/30" href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/"
-                        target="_blank">
-                        <img src="./img/linkedin.svg" width="40" alt="linkedind">
-                    </a>
-                    <a class="links shadow-blue-500/30" href="https://twitter.com/kevin_argumedo" target="_blank">
-                        <img src="./img/twitter.svg" width="40" alt="twitter">
-                    </a>
-
+   
+    <main class=" grid place-items-center w-full">
+    
+        <section id="inicio" class=" h-screen pt-10 px-4 md:flex xl:items-center xl:px-40 border-b bg-[url('/Img/topography.svg')]">
+            
+            <div class="w-full xl:w-3/5 xl:pr-8 "> 
+                <h1 class="text-5xl mb-8 font-bold">Kevin Argumedo  <span class="text-primary">front-end developer</span></h1>
+                <p class="font-normal  mb-4 pr-5 ">
+                    Hola soy junior en desarrollo web. Me dedico a realizar retos de 
+                    Frontend Mentor, esto con HTML, CSS, JS y 
+                    recientemente con Tailwind poniendo a prueba todo
+                    lo que aprendo de manera autodidacta</p>
+                    <a href="" target="_blank"> <button class="borde w-36 h-10 font-medium mt-4 ">Descargar CV</button></a>
+                <div class="flex gap-4 mt-7">
+                    <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/" target="_blank"><img src="./Img/linkedin.svg"width="40" alt=""></a>
+                    <a href="https://twitter.com/kevin_argumedo" target="_blank"><img src="./Img/twitter.svg"width="40" alt=""></a>
+                   
                 </div>
             </div>
+            <div class="xl:w-2/5 hidden md:inline ">
+                <img src="./Img/programming.svg" alt="ilustracion">
+            </div>
+            
         </section>
+        
+        
+        <!-- proyectos -->
+        <section id="projectos" class="relative max-w-6xl w-4/5 h-auto xl:mt-16 scroll-mt-7"> 
+            <img class="absolute top-10 -left-44 -z-10" src="./Img/blob4.svg" width="700" alt=""> 
 
-        <section id="skills" class="xl:my-32 scroll-mt-24">
-            <h2 class="text-3xl font-medium my-4">Skills</h2>
-            <div class="grid place-content-center p-4 mt-5 xl:my-10">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-16">
-                    <div class="imagenSkills">
-                        <img src="./img/github.svg" width="80" alt="github">
-                        <p class="textSkills">GitHub</p>
-                    </div>
-                    <div class="imagenSkills">
-                        <img src="./img/git.svg" width="80" alt="git">
-                        <p class="textSkills">Git</p>
-                    </div>
-                    <div class="imagenSkills">
-                        <img src="./img/html.svg" width="80" alt="html">
-                        <p class="textSkills">HTML</p>
-                    </div>
-                    <div class="imagenSkills">
-                        <img src="./img/css.svg" width="80" alt="CSS">
-                        <p class="textSkills">CSS</p>
-                    </div>
-                    <div class="imagenSkills">
-                        <img src="./img/javascript.svg" width="80" alt="JS">
-                        <p class="textSkills">JavaScript</p>
-                    </div>
-                    <div class="imagenSkills">
-                        <img src="./img/tailwind.svg" width="80" alt="tailwind">
-                        <p class="textSkills">Tailwind</p>
-                    </div>
+            <div class="flex justify-between my-7 xl:py-5">
+                <h2 class="text-2xl font-bold">Proyectos</h2>
+                <div class="flex gap-2">
+                    <button class="">Ver todos</button>
+                    <img src="./Img/arrow-right-svgrepo-com.svg" width="20" alt="">
                 </div>
             </div>
+            <div class="w-full grid place-content-center  ">
+                <div class=" grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <article class="w-330 border pb-10 relative">
+                        <img src="./Img/intro-sing-up.jpg"   alt="">
+                        <div class="flex gap-4 border p-2 text-gray2">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="px-4 my-2" >
+                            <h3 class="mb-4 text-xl font-medium">Intro-component</h3>
+                            <P class="mb-4 text-gray2">
+                                formulario de registro completo con 
+                                validación del lado del cliente usando JavaScript </P>
+                            <div class="flex gap-3 absolute bottom-3 ">
+                                <a href="https://form-singnup.netlify.app/" target="_blank"><button class="borde w-36 h-10 font-medium">Ver Pagina</button></a>
+                                <a href="https://github.com/Kevin-AC/Intro-component-with-sign-up-form"target="_blank"><button class="border w-36 h-10 font-medium">Ver Codigo</button></a>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="w-330 border pb-10 relative">
+                        <img src="./Img/card.jpg"  alt="">
+                        <div class="flex gap-4 border p-2 text-gray2">
+                            <p>HTML</p>
+                            <p>Tailwind</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="px-4 my-2" >
+                            <h3 class="mb-4 text-xl font-medium">Interactive card details</h3>
+                            <P class="mb-4 text-gray2">manipulación de DOM y validación de formularios </P>
+                            <div class="flex gap-3 absolute bottom-3">
+                                <a href="https://interactive-card-comp.netlify.app/" target="_blank"><button class="borde w-36 h-10 font-medium">Ver Pagina</button></a>
+                                <a href="https://github.com/Kevin-AC/Interactive-card"target="_blank"><button class="border w-36 h-10 font-medium">Ver Codigo</button></a>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="w-330  border pb-10 relative">
+                        <img src="./Img/tip-calculator.jpg"  alt="">
+                        <div class="flex gap-4 border p-2 text-gray2">
+                            <p>HTML</p>
+                            <p>Tailwind</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="px-4 my-2" >
+                            <h3 class="pb-4 text-xl font-medium">Tip calculator app</h3>
+                            <P class="pb-4 text-gray2">
+                                Pequeña aplicación para el cálculo de propinas 
+                                pudiendo calcular cuanto corresponde por persona</P>
+                            <div class="flex gap-3 absolute bottom-3">
+                                <a href="https://tip-calculator-d.netlify.app/" target="_blank"><button class="borde w-36 h-10 font-medium">Ver Pagina</button></a>
+                                <a href="https://github.com/Kevin-AC/Tip-calculator-app"target="_blank"><button class="border w-36 h-10 font-medium">Ver Codigo</button></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="w-330  border pb-10 relative">
+                        <img class="w-full h-60" src="./Img/banner.jpg"  alt="">
+                        <div class="flex gap-4 border p-2 text-gray2">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p></p>
+                        </div>
+                        <div class="px-4 my-2" >
+                            <h3 class="pb-4 text-xl font-medium">Blog De Café</h3>
+                            <P class="pb-4 text-gray2">
+                                Blog con diferentes páginas, incluyendo maquetación de formulario</P>
+                            <div class="flex gap-3 absolute bottom-3">
+                                <a href="https://blog-cafe-kevin.netlify.app/contacto.html" target="_blank"><button class="borde w-36 h-10 font-medium">Ver Pagina</button></a>
+                                <a href="https://github.com/Kevin-AC/BlogDeCaf-"target="_blank"><button class="border w-36 h-10 font-medium">Ver Codigo</button></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="w-330  border pb-10 relative">
+                        <img class="w-full h-60" src="./Img/FrontendStore.png"  alt="">
+                        <div class="flex gap-4 border p-2 text-gray2">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p></p>
+                        </div>
+                        <div class="px-4 my-2" >
+                            <h3 class="pb-4 text-xl font-medium">Frontend Store</h3>
+                            <P class="pb-4 text-gray2">
+                                Proyecto donde se hace uso de grid para la ubicación de los distintos artículos</P>
+                            <div class="flex gap-3 absolute bottom-3">
+                                <a href="https://frontend-tienda-kevin.netlify.app/" target="_blank"><button class="borde w-36 h-10 font-medium">Ver Pagina</button></a>
+                                <a href="https://github.com/Kevin-AC/Frontend-Store"target="_blank"><button class="border w-36 h-10 font-medium">Ver Codigo</button></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="w-330  border pb-10 relative">
+                        <div class="w-full h-60 bg-cover bg-center bg-no-repeat bg-[url('/Img/TwitterCard.png')] "></div>
+                    
+                        <div class="flex gap-4 border p-2 text-gray2">
+                            <p>HTML</p>
+                            <p>Tailwind</p>
+                            <p>React</p>
+                        </div>
+                        <div class="px-4 my-2" >
+                            <h3 class="pb-4 text-xl font-medium">Twitter Card</h3>
+                            <P class="pb-4 text-gray2">
+                                Primer proyecto usando React, realizando un clon de 
+                                la sección de seguir o dejar de seguir de Twitter</P>
+                            <div class="flex gap-3 absolute bottom-3">
+                                <a href="https://twitter-card-5151.netlify.app/" target="_blank"><button class="borde w-36 h-10 font-medium">Ver Pagina</button></a>
+                                <a href="https://github.com/Kevin-AC/PrimerProyectoReact"target="_blank"><button class="border w-36 h-10 font-medium">Ver Codigo</button></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+               
+            </div>
+
         </section>
-
-        <section id="projects" class="scroll-mt-24 ">
-            <h2 class="text-3xl font-medium my-4">Proyectos</h2>
-            <div class="grid place-content-center p-4 mt-5">
-                <div class="grid gap-4 xl:grid-cols-2 xl:gap-8">
-
-                    <div class="imgProject group">
-                        <div class="divLinks  ">
-                            <a class="butonProject" href="https://interactive-card-comp.netlify.app/"
-                                target="_blank">Ver Pagina</a>
-                            <a class="butonProject" href="https://github.com/Kevin-AC/Interactive-card"
-                                target="_blank">Ver Codigo</a>
-                        </div>
-                        <img src="./img/card.jpg" alt="creditCard">
-                    </div>
-
-                    <div class="imgProject group ">
-                        <div class="divLinks ">
-                            <a class="butonProject" href="https://tip-calculator-d.netlify.app/" target="_blank">Ver
-                                Pagina</a>
-                            <a class="butonProject" href="https://github.com/Kevin-AC/Tip-calculator-app"
-                                target="_blank">Ver Codigo</a>
-                        </div>
-                        <img src="./img/tip-calculator.jpg" alt="tip-calculator">
-                    </div>
-
-                    <div class="imgProject group ">
-                        <div class="divLinks ">
-                            <a class="butonProject" href="https://form-singnup.netlify.app/" target="_blank">Ver
-                                Pagina</a>
-                            <a class="butonProject" href="https://github.com/Kevin-AC/Intro-component-with-sign-up-form"
-                                target="_blank">Ver Codigo</a>
-                        </div>
-                        <img src="./img/intro-sing-up.jpg" alt="sing-up">
-                    </div>
-
-                    <div class="imgProject group">
-                        <div class="divLinks ">
-                            <a class="butonProject" href="https://ntf-card-kevin.netlify.app/" target="_blank">Ver
-                                Pagina</a>
-                            <a class="butonProject" href="https://github.com/Kevin-AC/NFT-preview-card"
-                                target="_blank">Ver Codigo</a>
-                        </div>
-                        <img src="./img/nft-card.jpg" alt="nft-card">
-                    </div>
-
-                    <div class="imgProject group ">
-                        <div class="divLinks ">
-                            <a class="butonProject" href="https://qr-component-kevin.netlify.app/" target="_blank">Ver
-                                Pagina</a>
-                            <a class="butonProject" href="https://github.com/Kevin-AC/QR-code-component"
-                                target="_blank">Ver Codigo</a>
-                        </div>
-                        <img src="./img/qr-component.jpg" alt="qr-component">
-                    </div>
-
-                    <div class="imgProject hover:bg-semiOscuro group bg-Alabaster ">
-                        <div class="divLinks ">
-                            <a class="butonProject" href="https://www.frontendmentor.io/profile/Kevin-AC"
-                                target="_blank">Mas Proyectos</a>
-                        </div>
-                        <img src="./img/frontendmentor.svg " width="170px">
-                    </div>
-
+     
+        
+        <!-- Skilss -->
+        <section id="skills" class="max-w-6xl w-4/5 xl:h-auto pt-10 my-5 xl:mb-52 xl:mt-28 scroll-mt-7  relative">
+            <img class="absolute bottom-0 -right-32 -z-10" src="./Img/blob (1).svg" width="700" alt="">
+            <div class="flex justify-between my-7">
+                <h2 class="text-2xl font-bold">Skills</h2>
+                <div class="flex gap-2">
+                    <button class="">Ver todos</button>
+                    <img src="./Img/arrow-right-svgrepo-com.svg" width="20" alt="">
                 </div>
             </div>
+
+           <div class="flex">
+                <div class="relative  xl:w-2/5 hidden xl:grid">
+                    <img class="absolute bottom-0 right-0 " src="./Img/dots.svg" width="100" alt="">
+                    <img class="absolute top-0 left-0 " src="./Img/dots.svg" width="100" alt="">
+                    <img class="absolute bottom-0 right-0 -z-10" src="./Img/blob5.svg" width="700" alt="">
+                   
+                </div>
+
+                <div class="my-4 xl:w-3/5 w-full grid place-content-center relative">   
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-16">
+                        <div class="imagenSkills">
+                            <img src="./Img/github.svg" width="80" alt="github">
+                            <div class="border-t w-full h-4 ">
+                                <p class="textSkills ">GitHub</p>
+                            </div>
+                           
+                        </div>
+                        <div class="imagenSkills">
+                            <img src="./Img/git.svg" width="80" alt="git">
+                            <div class="border-t w-full h-4 ">
+                                <p class="textSkills">Git</p>
+                            </div>
+                            
+                        </div>
+                        <div class="imagenSkills">
+                            <img src="./Img/html.svg" width="80" alt="html">
+                            <div class="border-t w-full h-4 ">
+                                <p class="textSkills">HTML</p>
+                            </div>
+                           
+                        </div>
+                        <div class="imagenSkills">
+                            <img src="./Img/css.svg" width="80" alt="CSS">
+                            <div class="border-t w-full h-4 ">
+                                <p class="textSkills">CSS</p>
+                            </div>
+                            
+                        </div>
+                        <div class="imagenSkills">
+                            <img src="./Img/javascript.svg" width="80" alt="JS">
+                            <div class="border-t w-full h-4 ">
+                                <p class="textSkills">JavaScript</p>
+                            </div>
+                            
+                        </div>
+                        <div class="imagenSkills">
+                            <img src="./Img/tailwind.svg" width="80" alt="tailwind">
+                            <div class="border-t w-full h-4 ">
+                                <p class="textSkills">Tailwind</p>
+                            </div>
+                           
+                        </div>
+                </div>
+           </div>
+
         </section>
+        
+        <!-- Contacto -->
+        <section id="contacto" class="max-w-6xl w-4/5  h-auto my-10  relative">
+            <img class="absolute -bottom-32 -left-40  -z-10" src="./Img/blob (2).svg" width="700" alt="">
+            <div class="flex justify-between my-7">
+                <h2 class="text-2xl font-bold">Contacto</h2>
+                <div class="flex gap-2">
+                    <button class="">Ver todos</button>
+                    <img src="./Img/arrow-right-svgrepo-com.svg" width="20" alt="">
+                </div>
+            </div>
+            <div class="md:flex flex-col xl:flex-row md:justify-between w-full px-2 ">
+                <div class=" flex flex-col justify-between">
+                    <p class="w-auto  xl:w-584 xl:mt-8">
+                        Estoy interesado en oportunidades de trabajo como trainee o junior.
+                         Sin embargo, si tiene otra solicitud o pregunta, no dude en ponerse en contacto conmigo.
+                    </p>
 
-        <section id="contact" class="xl:my-20 scroll-mt-24">
-            <h2 class="text-3xl font-medium  my-4 xl:my-7">Contacto</h2>
-            <div class="xl:mx-28">
-                <form id="form" action="">
-                    <input id="email" name="email" class="inputs placeholder:text-principal" type="text"
-                        placeholder="Email">
-                    <textarea id="mensaje" name="mensaje" class="inputs pt-4 h-32 xl:h-64  placeholder:text-principal"
-                        name="texto" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <div class="px-9">
-                        <button type="submit" class="buttons  hover:bg-hover ">Enviar</button>
+                    <div class="xl:p-4 mt-8">
+                        <h3 class="mb-4 text-xl font-medium" >Redes</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/" target="_blank"><img src="./Img/linkedin.svg"width="40" alt=""></a>
+                            <a href="https://twitter.com/kevin_argumedo" target="_blank"><img src="./Img/twitter.svg"width="40" alt=""></a>
+                            <a href="https://github.com/Kevin-AC" target="_blank"><img src="./Img/Github.svg"width="40" alt=""></a>
+                        </div>
+                        
                     </div>
-                </form>
-                <a id="sendmail" class="hidden" href="mailto:kevin.argumedo@gmail.com" target="_blank"></a>
-
-                <div class="flex justify-center gap-4 py-4 xl:gap-9">
-                    <a class="links" href="https://github.com/Kevin-AC" target="_blank">
-                        <img src="./img/github.svg" width="40px" alt="github">
-                    </a>
-                    <a class="links" href="https://www.linkedin.com/in/kevin-argumedo-06ba63206/" target="_blank">
-                        <img src="./img/linkedin.svg" width="40px" alt="linkedind">
-                    </a>
-                    <a class="links" href="https://twitter.com/kevin_argumedo" target="_blank">
-                        <img src="./img/twitter.svg" width="40px" alt="twitter">
-                    </a>
-
+                </div>
+               
+                <div class="w-auto p-2 mt-10 border xl:mt-28 xl:p-4 grid place-items-center xl:place-items-start ">
+                    <h3 class="mb-4 text-xl font-medium">Mensaje Aqui!</h3>
+                    <div class="flex gap-2 items-center">
+                        <img src="./Img/discord.svg" width="30" alt="">
+                        <p>kevin.ac#4318</p>
+                    </div>
+                    <div class="flex gap-2 items-center mt-2">
+                        <img src="./Img/mail.svg" width="30" alt="">
+                        <p>kevin.argumedo@gmail.com</p>
+                    </div>
 
                 </div>
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
+    <footer class=" w-full h-16 border-t ">
+        <P class="text-center p-4">@kevin_argumedo</P>
+    </footer>
+    
 </body>
-
 </html>

@@ -1,39 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["index.html"],
   theme: {
     extend: {
       colors:{
-        'secundario':'#F7F7FF',
-        'grisClaro':'#7B817F',
-        'principal':'#070600',
-        'semiOscuro':'rgba(0, 0, 0, 0.5)',
-        'Alabaster':'#E8EBE4',
-        'hover':'#0F0F0F',
+        'BG':'#F3EFE0',
+        'gray':'#6D7275',
+        'black':'#000000',
+        'flahWhite':'#F1F2F6',
+        'background':'#282C33',
+        'primary':'#C778DD',
+        'gray2':'#ABB2BF',
+        'white':'#FFFFFF',
       },
       fontFamily:{
-        'Roboto':'Roboto', 
-        'Montserrat':'Montserrat',
+        'FiraCode':'Fira Code'
       },
       backgroundImage:{
-        'Twitter':"./img/css.svg",
-        'Git':"./img/git.svg",
-        'GitHub':"./img/github.svg",
-        'Html':"./img/html5-.svg",
-        'Css':"./img/css.svg",
-        'Tailwind':"./img/tailwind.svg",
-        'Js':"./img/javascript.svg",
-        'FrontendM':"./img/frontendmentor.svg",
-        'Linkedin':"./img/linkedin.svg",
-        'Mail':"./img/mail.svg",
-        
+        'topography':"url('./Img/topography/topography.svg')"
       },
       width:{
-        '375':'375px',
-        '896':'896px'
-      },
-   
-      
+        '584':'584px',
+        '330':'330px'
+      }
     },
   },
   plugins: [],

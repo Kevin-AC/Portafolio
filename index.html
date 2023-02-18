@@ -5,19 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Kevin Argumedo</title>
 </head>
-<body class="bg-background text-white relative font-FiraCode ">
-        <nav class="xl:flex xl:fixed xl:top-0 xl:justify-between items-center w-full bg-background z-50 xl:h-14 xl:px-4  xl:border-y">
-            <a href="#inicio"><img src="./Img/logo blanco.png" width="80" alt="logo"></a>
-            <div class="flex gap-4 list-none">
-                <li><a href="#projectos">Proyectos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+<body class="bg-background  text-white relative font-FiraCode ">
+    <header class="border bg-background  fixed top-0 w-full z-50 h-12 xl:h-14 flex items-center">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto ">
+            <div>
+               <a href="#inicio"> <img class="w-16 cursor-pointer " src="./Img/logo blanco.png" alt="..."></a>
             </div>
-        </nav>
+            <div
+                class="nav-links   md:static  absolute md:min-h-fit h-64  left-0 md:visible invisible top-0 md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#projectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#contacto">Contacto</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          
+    </header>
    
-    <main class=" grid place-items-center w-full">
+    <main class=" grid place-items-center w-full ">
     
         <section id="inicio" class=" h-screen pt-10 px-4 md:flex xl:items-center xl:px-40 border-b bg-[url('/Img/topography.svg')]">
             
@@ -167,7 +183,7 @@
         
         <!-- Skilss -->
         <section id="skills" class="relative max-w-6xl w-4/5 h-auto pt-3 xl:mb-52 xl:mt-10 scroll-mt-7 ">
-            <img class="absolute bottom-0 -right-32 -z-10" src="./Img/blob (1).svg" width="700" >
+            <img class="absolute top-0 right-0 -z-10 " src="./Img/blob (1).svg" width="700" >
             <div class="flex justify-between my-7 items-center">
                 <h2 class="text-2xl font-bold">Skills</h2>
                 <img class="w-20 h-5" src="./Img/lineas.png" >
@@ -274,6 +290,22 @@
     <footer class=" w-full h-16 border-t ">
         <P class="text-center p-4">@kevin_argumedo</P>
     </footer>
-    
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            navLinks.classList.add("bg-background");
+            // e.name = e.name === 'menu' ? 'close' : 'menu'
+            //navLinks.classList.toggle('top-96')
+            if(e.name === 'menu'){
+                navLinks.classList.remove("invisible");
+                e.name='close'
+            }else if(e.name === 'close'){
+                navLinks.classList.add("invisible");
+                e.name='menu'
+            }
+            console.log(e.name)
+           
+        }
+    </script>
 </body>
 </html>

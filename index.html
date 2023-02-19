@@ -9,14 +9,14 @@
     <title>Kevin Argumedo</title>
 </head>
 <body class="bg-background  text-white relative font-FiraCode ">
-    <header class=" border bg-background  fixed top-0 w-full z-50 h-12 xl:h-14 flex items-center ">
-        <nav class="flex justify-between items-center w-[92%]  mx-auto ">
+    <header class=" border bg-background fixed top-0 w-full z-50 h-14 flex items-center ">
+        <nav class="flex justify-between items-center w-[92%] relative mx-auto  ">
             <div>
                <a href="#inicio"> <img class="w-16 cursor-pointer " src="./Img/logo blanco.png" alt="..."></a>
             </div>
             <div
-                class="nav-links   md:static  absolute md:min-h-fit h-64  left-0 md:visible invisible top-0 md:w-auto  w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center gap-8">
+                class="nav-links md:static absolute md:min-h-fit h-64  left-0 md:visible invisible top-[53px] md:w-auto  w-full flex items-center justify-center  px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-8  md:text-base text-xl ">
                     <li>
                         <a class="hover:text-gray-500" href="#projectos">Proyectos</a>
                     </li>
@@ -29,14 +29,18 @@
                    
                 </ul>
             </div>
-            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            <button  class="md:hidden" onclick="onToggleMenu(this)" >
+                <img id="menu" src="./Img/menu.svg" width="50" >
+                <img id="close" class="hidden " src="./Img/close.svg" width="50" >
+            </button>
           
     </header>
    
     <main class=" grid place-items-center w-full  ">
     
         <section id="inicio" class=" h-screen pt-28 px-4 md:flex xl:items-center xl:px-40 border-b bg-[url('/Img/topography.svg')]">
-            <div class="w-full xl:w-3/5 xl:pr-8 "> 
+            <div class="w-full xl:w-3/5 xl:pr-8 text-center flex flex-col justify-center items-center xl:block xl:text-left"> 
+                
                 <h1 class="text-5xl mb-8 font-bold">Kevin Argumedo  <span class="text-primary">front-end developer</span></h1>
                 <p class="font-normal  mb-4 pr-5 ">
                     Hola soy junior en desarrollo web. Me dedico a realizar retos de 
@@ -49,8 +53,9 @@
                     <a href="https://twitter.com/kevin_argumedo" target="_blank"><img src="./Img/twitter.svg"width="40" alt="twitter"></a>
                    
                 </div>
+                
             </div>
-            <div class="xl:w-2/5 hidden md:inline ">
+            <div class="xl:w-2/5 max-w-md my-7 hidden lg:inline ">
                 <img src="./Img/programming.svg" alt="ilustracion">
             </div>
             
@@ -198,7 +203,7 @@
 
                 <div class="my-4 xl:w-3/5 w-full grid place-content-center relative">   
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-16">
+                    <div class="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-16">
                         <div class="imagenSkills">
                             <img src="./Img/github.svg" width="80" alt="github">
                             <div class="border-t w-full h-4 ">
@@ -291,18 +296,25 @@
     </footer>
     <script>
         const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e){
-            navLinks.classList.add("bg-background");
-            // e.name = e.name === 'menu' ? 'close' : 'menu'
-            //navLinks.classList.toggle('top-96')
-            if(e.name === 'menu'){
-                navLinks.classList.remove("invisible");
-                e.name='close'
-            }else if(e.name === 'close'){
-                navLinks.classList.add("invisible");
-                e.name='menu'
-            }
-            console.log(e.name)
+        const menu=document.getElementById('menu')
+        const close=document.getElementById('close')
+
+        function onToggleMenu(e){ 
+            navLinks.classList.toggle('invisible');
+            navLinks.classList.toggle("bg-background");
+            close.classList.toggle('hidden')
+            menu.classList.toggle('hidden')
+         
+            navLinks.addEventListener('click',(e)=>{
+                let target=e.target.innerText
+                if(target=='Proyectos'||target=='Skills'||target=='Contacto'){
+                    navLinks.classList.add('invisible');
+                    navLinks.classList.toggle("bg-background");
+                    close.classList.toggle('hidden')
+                    menu.classList.toggle('hidden')
+                }
+            
+            })  
            
         }
     </script>
